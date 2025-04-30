@@ -1,6 +1,6 @@
-# Agent Generator
+# AdaptFlow
 
-A web application for generating AI agents using LangGraph and ReAct frameworks, powered by AWS Bedrock.
+A web application for generating AI agents and workflow powered by AWS Bedrock.
 
 ## Features
 
