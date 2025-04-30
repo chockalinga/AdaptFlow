@@ -2,8 +2,7 @@
 
 A web application for generating AI agents and workflow powered by AWS Bedrock.
 
-
-![AdaptFlow Demo](../AdaptFlow/assets/adaptflow.gif)
+![AdaptFlow Demo](assets/adaptflow.gif)
 
 ## Features
 
