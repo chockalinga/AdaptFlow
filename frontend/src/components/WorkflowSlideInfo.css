@@ -1,0 +1,104 @@
+.workflow-slide-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.workflow-slide-container.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.workflow-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.workflow-content.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.workflow-content h2 {
+  color: #333;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.workflow-content .description {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.detailed-description {
+  margin: 24px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.detailed-description h3 {
+  color: #444;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.examples {
+  margin-top: 24px;
+}
+
+.examples h3 {
+  color: #444;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.example-card {
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.example-card h4 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.example-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Animation for examples */
+.example-card {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+.example-card:nth-child(1) { animation-delay: 0.1s; }
+.example-card:nth-child(2) { animation-delay: 0.2s; }
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
